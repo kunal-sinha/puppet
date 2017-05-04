@@ -1,0 +1,7 @@
+<html>
+	<ul>
+		<% scope["nginx::systeminformation::systeminformationdata"].each do |system| -%>
+			Value :: <%= system["info"] %>
+		<% end -%>
+	</ul>
+</html>
